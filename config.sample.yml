@@ -1,0 +1,16 @@
+---
+:xmpp:
+  :id: jabber-id
+  :pw: jabber-password 
+  :name: lucsbridge
+  :resource: daemon
+  :port: 5222
+  :master: stephenwattam@gmail.com
+  :subscriptions_file: subscriptions.yml
+:irc:
+  :nick: ^lb
+  :user: lucsbridge
+  :name: LUCS Jabber Bridge
+  :server: irc.freenode.net
+  :channel: ! '#channel'
+  :port: 6667
