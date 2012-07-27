@@ -258,7 +258,7 @@ private
     when "users"
       output_userlist()
     else
-      say("Unrecognised command!")
+      #say("Unrecognised command!")
     end
   end
 
