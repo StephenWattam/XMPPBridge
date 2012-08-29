@@ -15,7 +15,8 @@ LOG_FILE      = $stdout
 # Open global items
 $config       = PersistentHash.new(CONFIG_FILE, true)
 $log          = Logger.new(LOG_FILE)
-$log.level    = Logger::DEBUG
+# $log.level    = Logger::DEBUG
+$log.level    = Logger::INFO
 
 
 class Bridge

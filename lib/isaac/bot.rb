@@ -170,7 +170,7 @@ module Isaac
     end
 
     def parse(input)
-      puts "<< #{input.unpack('A' * input.length).join(",")}" if @bot.config.verbose
+      # puts "<< #{input.unpack('A' * input.length).join(",")}" if @bot.config.verbose
       msg = Message.new(input)
 
       if ("001".."004").include? msg.command
@@ -224,7 +224,7 @@ module Isaac
       match = @raw.match(/(^:(\S+) )?(\S+)(.*)/)
       _, @prefix, @command, raw_params = match.captures
 
-      puts "##{@command}"
+      # puts "##{@command}"
 
       raw_params.strip!
       if match = raw_params.match(/:(.*)/)
